@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha Tutari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- 🔹 Toolbar / Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">🌸 Likitha Tutari</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Get in Touch</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero container">
+      <!-- Left -->
+      <div class="hero-text" data-aos="fade-right">
+        <h1>Hi, I'm <span>Likitha Tutari</span> 🌸</h1>
+        <p>
+          A passionate Computer Science student exploring 
+          <b>Web Development, Databases, and Programming</b> 
+          to create impactful projects with creativity and precision.
+        </p>
+        <a href="#about" class="btn">✨ Explore My Work</a>
+      </div>
+      <!-- Right -->
+      <div class="hero-avatar" data-aos="fade-left">
+       <img src="Likitha Tutari.jpg" alt="Likitha Tutari">
+
+      </div>
+    </div>
+    <div id="particles-js"></div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-card glass container" data-aos="fade-up">
+  
+    <div class="about-text">
+      <h3>Hi, I'm <span>Likitha</span> 👋</h3>
+      <p>
+        I’m a passionate Computer Science student who loves exploring technology, 
+        building innovative projects, and solving real-world problems with 
+        creativity and code. 🌸  
+        My journey in tech blends <b>web development, databases, and programming</b> 
+        with an eye for design and detail.
+      </p>
+      <ul class="about-bullets">
+        <li>💻 Web Developer</li>
+        <li>📚 CS Engineer</li>
+        <li>🌐 Tech Explorer</li>
+        <li>🎨 Creative Thinker</li>
+      </ul>
+      <div class="about-cta">
+        <!-- Resume Button -->
+<a href="Likitha_Tutari_Resume.pdf" class="btn" target="_blank" rel="noopener">📄 Download Resume</a>
+
+        <a href="#contact" class="btn secondary">✉️ Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid container" data-aos="zoom-in">
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> HTML</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"> CSS</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"> JavaScript</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"> C</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"> MongoDB</div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <h2 class="section-title">🌟 My Projects</h2>
+  <div class="projects-grid container">
+
+    <!-- Project 1 -->
+    <div class="project-card glass" onclick="openModal('p1')">
+      <div class="icon">📱</div>
+      <h3>VisionX</h3>
+      <p>Mobile app for visually impaired</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card glass" onclick="openModal('p2')">
+      <div class="icon">📚</div>
+      <h3>Book Marketplace</h3>
+      <p>Web platform for buying & selling</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card glass" onclick="openModal('p3')">
+      <div class="icon">💰</div>
+      <h3>Budget System</h3>
+      <p>Unix shell-based expense tracker</p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card glass" onclick="openModal('p4')">
+      <div class="icon">🎬</div>
+      <h3>Movie Recommender</h3>
+      <p>Python ML recommendation engine</p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card glass" onclick="openModal('p5')">
+      <div class="icon">👟</div>
+      <h3>Shoe Trading DApp</h3>
+      <p>Solana blockchain trading platform</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Project Modals -->
+<div id="p1" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('p1')">&times;</span>
+    <h3>VisionX</h3>
+    <p><strong>Tech:</strong> Kotlin, Android Studio, Firebase</p>
+    <p>A mobile app designed to help visually impaired users by integrating accessibility features and cloud support.</p>
+  </div>
+</div>
+
+<div id="p2" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('p2')">&times;</span>
+    <h3>Online Book Marketplace</h3>
+    <p><strong>Tech:</strong> HTML, CSS, JS, MySQL</p>
+    <p>A full-stack web platform that allows users to buy, sell, and manage books with secure database integration.</p>
+  </div>
+</div>
+
+<div id="p3" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('p3')">&times;</span>
+    <h3>Budget Management System</h3>
+    <p><strong>Tech:</strong> Linux Shell, Bash</p>
+    <p>A simple but effective shell-based budget tracker for Linux that automates expense tracking and reporting.</p>
+  </div>
+</div>
+
+<div id="p4" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('p4')">&times;</span>
+    <h3>Movie Recommendation System</h3>
+    <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+    <p>A content-based recommendation engine using ML algorithms to suggest personalized movies to users.</p>
+  </div>
+</div>
+
+<div id="p5" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('p5')">&times;</span>
+    <h3>Online Shoe Trading Platform</h3>
+    <p><strong>Tech:</strong> Solana, Web3.js, Smart Contracts</p>
+    <p>A decentralized platform for secure and transparent trading of sneakers powered by blockchain technology.</p>
+  </div>
+</div>
+<!-- Achievements Section -->
+<section id="achievements" class="achievements-section">
+  <h2 class="section-title">🏆 Achievements</h2>
+  <div class="achievements-list container">
+
+    <div class="achievement-card glass" data-aos="fade-up">
+      <span class="icon">🥈</span>
+      <div class="text">
+        <h3>VTU Throwball Tournament 2023</h3>
+        <p>Runner Up</p>
+      </div>
+    </div>
+
+    <div class="achievement-card glass" data-aos="fade-up" data-aos-delay="100">
+      <span class="icon">🎤</span>
+      <div class="text">
+        <h3>Inter-College Fest</h3>
+        <p>Vocalist (Runner Up)</p>
+      </div>
+    </div>
+
+    <div class="achievement-card glass" data-aos="fade-up" data-aos-delay="200">
+      <span class="icon">🏸</span>
+      <div class="text">
+        <h3>District Level Badminton</h3>
+        <p>Participant / Player</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">Get In Touch</h2>
+  <div class="contact-container">
+    
+    <!-- Left Side - Info -->
+    <div class="contact-info">
+  <p>📍 Bengaluru, Karnataka, India</p>
+  <p>✉️ tutarilikitha@gmail.com</p>
+  <p>📞 +91 7019565717</p>
+</div>
+
+
+    <!-- Right Side - Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.72,22,103.77,29.05,158,17.39C230.39,51,284.12,23,339,17.39c54.22-5.53,104.19,16.87,158,27.72,62.44,12.54,127.23,2.22,185-17.39s113.7-49.9,172-41.4c59.36,8.64,113.08,47.24,172,61.62,55.26,13.34,117.39,7.83,174-8.16V0Z" 
+        opacity=".25" fill="#fbb1d1"></path>
+      <path d="M0,0V15.81C47.42,36.09,103.77,48,158,44.26c63.23-4.1,120.74-32.56,185-30.09,50.48,1.91,95.9,23.09,146,36.53,61.26,16.85,128.35,22.12,186,6.71,56.5-15,105.34-50.9,161-57.78,56.6-7,113.38,17.48,172,30.09,53.52,11.6,108.11,10.25,162-1.72V0Z" 
+        opacity=".5" fill="#e6ccff"></path>
+      <path d="M0,0V5.63C47.42,27.42,103.77,45,158,43.24c63.23-1.86,120.74-27.9,185-26.36,50.48,1.28,95.9,18.5,146,29.26,61.26,12.44,128.35,16.34,186,4.95,56.5-10.98,105.34-37.27,161-42.34,56.6-5.24,113.38,13.08,172,22.5,53.52,8.67,108.11,7.66,162-1.28V0Z" 
+        fill="#ffe6f0"></path>
+    </svg>
+  </div>
+  <p>Made with <span class="heart">❤️</span> by Likitha</p>
+</footer>
+
